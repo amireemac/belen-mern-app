@@ -31,7 +31,17 @@ app.get("/students", async (req, res) => {
 });
 
 // CREATE
+app.post("/students", async (req, res) => {
+  const student = new Student({
+    name: req.body.name,
+    course: req.body.course,
+    age: req.body.age,
+  });
 
+  await student.save();
+
+  res.json(student);
+});
 
 // UPDATE
 app.put("/students/:id", async (req, res) => {
