@@ -74,13 +74,7 @@ function App() {
         value={name}
         onChange={(e) => setName(e.target.value)}
       />
-      <br />
-      <input
-        placeholder="Course"
-        value={course}
-        onChange={(e) => setCourse(e.target.value)}
-      />
-      <br />
+      
       <input
         type="number"
         placeholder="Age"
