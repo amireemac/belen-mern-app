@@ -48,7 +48,7 @@ function App() {
       });
   };
 
-  // Edit button: load the student's info into the form
+  // Edit button
   const startEdit = (student) => {
     setEditingId(student._id);
     setName(student.name);
